@@ -21,6 +21,7 @@ To start the project:
 - Enter your key in the app.js file in the first line, where it is declared
 
 ## Technologies
+- HTML
 - JavaScrpit ES6
 - Arrow Functions
 - Data import
