@@ -13,8 +13,6 @@ The application uses an API to retrieve city-specific data. The view of the down
 - Removing city from app
 In addition, icons representing specific parts of the weather have been added as part of FrontEnd. 
 
-W warsztacie tym należy korzystać z wszystkich udogodnień ES6, takich jak deklaracje zmiennych przez `const`, `let`, klasowość `class`, funkcje strzałkowe, `import/export`, `async/await`, `fetch` itd.
-
 ## How to start?
 To start the project:
 - Go to the website: https://www.weatherapi.com
