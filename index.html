@@ -16,6 +16,21 @@
 </header>
 
 <section id="app" class="container">
+
+  <!-- Moduł wyszukiwarki - domyślnie ukryty -->
+  <div class="module module__form" hidden>
+    <button class="btn btn--icon btn--close"><i class="material-icons">close</i></button>
+    <h2>Znajdź miasto</h2>
+
+    <form novalidate autocomplete="off" class="find-city">
+      <input type="text" name="search" id="search" placeholder="np. Wrocław wpisz bez polskich znaków"/>
+      <button type="submit"><i class="material-icons">search</i></button>
+    </form>
+    <div class="search-error"></div>
+  </div>
+
+
+
   <div class="loading">
     <div class="dual-ring"></div>
   </div>
