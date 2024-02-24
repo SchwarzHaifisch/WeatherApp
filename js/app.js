@@ -156,8 +156,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     const deleteRecord = document.querySelector(`.module__weather`);
                     deleteRecord.remove();
                 });
-            } else {
-                console.log("Error with data");
             }
         })
 
@@ -172,13 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             return await response.json();
         } catch (error) {
-            console.log(`Error ${error}`);
+            alert("Enter proper name of City");
         }
     }
 
     async function runHome() {
-        const value = "Warszawa"
-        // const data = await getWeather("auto:ip");
+        const value = "auto:ip";
         const data = await getWeather(value);
         if (data) {
             console.log(data);
@@ -191,13 +188,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 deleteRecord.remove();
             });
         } else {
-            console.log("Error with data");
+            alert("Wrong Data");
         }
     }
 
     try {
         runHome();
     } catch (_) {
-        throw new Error(`Error`);
+        alert("Wrong Data");
     }
 });
